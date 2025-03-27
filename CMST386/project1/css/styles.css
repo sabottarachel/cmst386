@@ -1,0 +1,118 @@
+/* colors
+mint cream: #F1FFFA
+tea green: #CCFCCB
+celadon: #96E6B3
+fern green: #568259
+outer space: #464E47
+*/
+
+body {
+    background-color: #F1FFFA;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #464E47;
+    font-family: Impact, Arial, sans-serif;
+    font-weight: 100;
+    text-align: left;
+}
+
+h1.header {
+    font-family: Impact, Arial, sans-serif;
+    font-weight: 100;
+    color: #568259;
+    font-size: 48px;
+    text-align: center;
+}
+
+h2.desc {
+    font-family: Impact, Arial, sans-serif;
+    font-weight: 100;
+    color: #464E47;
+    font-size: 34px;
+    text-align: center;
+}
+
+h4.questions {
+    font-family: Impact, Arial, sans-serif;
+    font-weight: 100;
+    color: #464E47;
+    font-size: 28px; 
+}
+
+p {
+    font-family: Josefin Sans, Arial, sans-serif; 
+    color: #464E47;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+a {
+    font-family: Josefin Sans, Arial, sans-serif; 
+}
+
+nav {
+    background-color: #464E47;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 20px;
+}
+
+nav li a {
+    font-size: 20px;
+    color: #CCFCCB;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #96E6B3;
+    text-decoration: none;
+}
+
+section.project1-header {
+    margin: auto;
+    width: auto;
+}
+
+/* IMAGE GALLERY */
+
+section.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+section.gallery {
+  margin: 5px;
+  border: 1px solid #CCFCCB;
+  float: left;
+  width: 180px;
+}
+
+section.gallery:hover {
+  border: 3px solid #96E6B3;
+}
+
+section.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  padding: 15px;
+  text-align: center;
+  font-family: Josefin Sans, Arial, sans-serif;
+}
