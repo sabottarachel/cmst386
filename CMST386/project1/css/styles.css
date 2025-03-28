@@ -51,7 +51,9 @@ a {
     font-family: Josefin Sans, Arial, sans-serif; 
 }
 
-nav {
+/* REGULAR NAV MENU */
+
+nav.index-nav {
     background-color: #464E47;
     display: flex;
     justify-content: center;
@@ -59,22 +61,22 @@ nav {
     width: auto;
 }
 
-ul {
+nav.index-nav ul {
     list-style-type: none;
 }
 
-nav li {
+nav.index-nav li {
     display: inline;
     padding: 20px;
 }
 
-nav li a {
+nav.index-nav li a {
     font-size: 20px;
     color: #CCFCCB;
     text-decoration: none;
 }
 
-nav a:hover {
+nav.index-nav a:hover {
     font-weight: bold;
     color: #96E6B3;
     text-decoration: none;
@@ -85,9 +87,68 @@ section.project1-header {
     width: auto;
 }
 
+/* DROPDOWN NAV MENU */
+
+nav.dropdown-nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #464E47;
+    font-family: Josefin Sans, Arial, sans-serif; 
+  }
+
+nav.dropdown-nav a {
+    float: left;
+    font-size: 20px;
+    color: #96E6B3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Josefin Sans, Arial, sans-serif; 
+}
+
+nav.dropdown-nav a:hover {
+    font-weight: bold;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #96E6B3;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    font-weight: bold;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #464E47;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* IMAGE GALLERY */
 
-section.container {
+figure.container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -95,18 +156,18 @@ section.container {
     margin: 0 auto;
 }
 
-section.gallery {
+figure.gallery {
   margin: 5px;
   border: 1px solid #CCFCCB;
   float: left;
   width: 180px;
 }
 
-section.gallery:hover {
+figure.gallery:hover {
   border: 3px solid #96E6B3;
 }
 
-section.gallery img {
+figure.gallery img {
   width: 100%;
   height: auto;
 }
