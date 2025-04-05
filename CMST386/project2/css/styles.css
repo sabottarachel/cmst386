@@ -1,0 +1,103 @@
+/* colors
+mint cream: #F1FFFA
+tea green: #CCFCCB
+celadon: #96E6B3
+fern green: #568259
+outer space: #464E47
+*/
+
+body {
+    background-color: #F1FFFA;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #464E47;
+    font-family: Impact, Arial, sans-serif;
+    font-weight: 100;
+    text-align: left;
+}
+
+h1 {
+    font-family: Impact, Arial, sans-serif;
+    font-weight: 100;
+    color: #568259;
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Impact, Arial, sans-serif;
+    font-weight: 100;
+    color: #464E47;
+    font-size: 34px;
+    text-align: center;
+}
+
+h4 {
+    font-family: Impact, Arial, sans-serif;
+    font-weight: 100;
+    color: #464E47;
+    font-size: 28px; 
+}
+
+p {
+    font-family: Josefin Sans, Arial, sans-serif; 
+    color: #464E47;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+a {
+    font-family: Josefin Sans, Arial, sans-serif; 
+    color: #464E47;
+}
+
+a:hover {
+    color: #568259;
+    font-weight: bold;
+}
+
+
+/* NAV MENU */
+
+nav {
+    background-color: #464E47;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 20px;
+}
+
+nav li a {
+    font-size: 20px;
+    color: #CCFCCB;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #96E6B3;
+    text-decoration: none;
+}
+
+section.project2-header {
+    margin: auto;
+    width: auto;
+}
+
+img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0;
+}
