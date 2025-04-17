@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web Design Projects - Home</title>
+    <link rel="stylesheet" href="project3/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> 
+    <meta name="description" content="This semester, I will complete four different web design and development projects that can be viewed here. Come along with me on a journey of learning all things websites.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <meta name="keywords" content="Web Design, Projects">
+</head>
+
+<body>
+    <nav class="default">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <nav class="burger">
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </a>
+        <ul id="links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <section class="project3-header">
+        <h2>CMST386 - Project 3</h2>
+    </section>
+
+    <h4>Explain the importance of responsive design and its impact on the target audience</h4>
+    <p>Responsive design is the practice of designing a webpage that is compatible on all devices and screen sizes, meaning it will automatically adjust. In CSS, you can create media query viewports that can specify whether an element should be hidden, shrunk, or enlarged. The impact of this design strategy is major; it ensures that whether a user is looking at your website on their phone or computer, it will render the same or be viewable. This also appeals to different audiences, such as older generations are more likely to look at a website on a computer. While on the other hand, younger audiences will likely view it on their mobile device.
+    </p>
+
+    <h4>Describe three different kinds of Google Analytics reports that will tell you what information your target audience is accessing</h4>
+    <p>First, acquisition reports are available, which shows how users landed on your site or app. This can be based on paid advertisements, social media, organic Google search, or other measures. IT is important to know which marketing techniques are the most effective so that you can put more time and resources into that strategy. You can also view a certain time frame of the site traffic and the level of engagement, such as how much the user was clicking to look at. Another report is engagement reports, which provides you more insight into what content drives engagement that then leads to conversions. The conversion part of the report can show you all your marketing channels to see how they work together to increase conversions. For example, a paid advertisement could direct users to a landing page where they can fill out their information. This report allows you to see the path users take to submit their lead, and see if they drop off anywhere in the process. Finally, monetization reports are exactly as it sounds; it is used to see the revenue your site generates. You are able to track transactions, average purchase revenue, and more data.</p>
+
+    <a href="preprocessing.html" id="preprocessing-button">Learn Preprocessing</a>
+
+   
+</body>
+
+</html>

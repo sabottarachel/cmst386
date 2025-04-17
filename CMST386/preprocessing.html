@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web Design Projects - Home</title>
+    <link rel="stylesheet" href="project3/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> 
+    <meta name="description" content="This semester, I will complete four different web design and development projects that can be viewed here. Come along with me on a journey of learning all things websites.">
+
+    <meta name="keywords" content="Web Design, Projects">
+</head>
+
+<body>
+    <nav>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project3.html">Project 3</a></li>
+            <li>Preprocessing</li>
+        </ul>
+    </nav>
+
+    <section class="project3-header">
+        <h2>CMST386 - Project 3</h2>
+    </section>
+
+    <h1>Preprocessing</h1>
+
+    <section class="project3-grid">
+        <section class="question1">
+            <h4>Explain the ways to implement preprocessing (client-side vs server-side)</h4>
+            <p>To briefly describe the difference, client-side scripting is executed by the web browser and server-side is executed on the web server. One way to implement preprocessing is to use LESS files because they can be compiled in a standard CSS file. Since it is browser friendly, it is client-side scripting since it is executed by the browser. The preprocessing action is done by JavaScript, which is still a client-sider server, because LESS is based on JavaScript style code.</p>
+        </section>
+
+        <section class="question2">
+            <h4>Define and describes the mechanisms used in either LESS or SASS: mixins, variables, functions, operators, nested variables</h4>
+            <p>LESS, Leaner Style Sheets, is a language that is compatible with CSS. JavScript will convert Less styles to CSS styles, so they are similar languages. It is easy to learn, and Less offers more capabilities than CSS does. Mixins are incredibly helpful for keeping a website theme the same throughout the entire website. This is helpful for calling upon borders, colors, fonts, and sizes. The stylistic values of the mixin properties can be called upon in the style sheet. For variables, this makes it easier so you can set the values at the top of the document instead of resetting for each CSS ID. The width and height can be attached to a variable name, so whenever the variable is called upon, it will pull that variable value. Functions are primarily used for math and converting numbers. You can convert numbers to percentages or decimals. This just saves the designer time because they don’t have to do number conversions. Speaking of conversions, operations are used for math formulas, and it even converts units. You can do arithmetic formulas with cm and mm, or px and cm. There are possibilities of impossible conversions, and therefore the conversion will be ignored. One other major part of LESS is nested variables, which allows you to create multiple style rules for one section. For example, you can put multiple style rules under the body ID tag. This simplifies the code, which is unavailable in CSS.</p>
+        </section>
+    </section>
+
+    <button onclick="topFunction()" id="top-button" title="Go to top">Back to Top</button>
+
+    <script>
+        let mybutton = document.getElementById("top-button");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+                if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+                }
+                function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+    </script>
+
+    <!--
+        <link rel="stylesheet/less" type="text/css" href="project3/styles.less"/> LESS file
+        <link rel="stylesheet/less" type="text/css" href="project3/styles/code.css"/> compiled CSS file
+
+        I wrote basic color and font family styles in the LESS file. I tried to compile in Visual Studio Code because I found a tutorial, but the terminal was not working. Instead, I compiled the code in cssportal.com
+    -->
+
+</body>
+
+</html>

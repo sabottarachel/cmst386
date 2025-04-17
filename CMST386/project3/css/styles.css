@@ -1,0 +1,252 @@
+/* colors
+mint cream: #F1FFFA
+tea green: #CCFCCB
+celadon: #96E6B3
+fern green: #568259
+outer space: #464E47
+*/
+
+body {
+    background-color: #F1FFFA;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #464E47;
+    font-family: Impact, Arial, sans-serif;
+    font-weight: 100;
+    text-align: left;
+}
+
+h1 {
+    font-family: Impact, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Impact, Arial, sans-serif;
+    font-weight: 100;
+    color: #464E47;
+    font-size: 34px;
+    text-align: center;
+}
+
+h4 {
+    font-family: Impact, Arial, sans-serif;
+    font-weight: 100;
+    color: #464E47;
+    font-size: 28px; 
+}
+
+p {
+    font-family: Josefin Sans, Arial, sans-serif; 
+    color: #464E47;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+a {
+    font-family: Josefin Sans, Arial, sans-serif; 
+    color: #464E47;
+}
+
+a:hover {
+    color: #568259;
+    font-weight: bold;
+}
+
+
+/* NAV MENU */
+nav.burger {
+    display: none;
+}
+
+nav.default {
+    background-color: #464E47;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+nav.default ul {
+    list-style-type: none;
+}
+
+nav.default li {
+    display: inline;
+    padding: 20px;
+}
+
+nav.default li a {
+    font-size: 20px;
+    color: #CCFCCB;
+    text-decoration: none;
+}
+
+nav.default a:hover {
+    font-weight: bold;
+    color: #96E6B3;
+    text-decoration: none;
+}
+
+/* BREADCRUMBS */
+ul.breadcrumb {
+    background-color: #464E47;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+    list-style: none;
+    padding: 20px;
+  }
+
+ul.breadcrumb li, ul.breadcrumb li a {
+    display: inline;
+    padding: 0px 10px;
+    text-align: center;
+    font-family: Josefin Sans, Arial, sans-serif; 
+    font-size: 20px;
+    color: #CCFCCB;
+    text-decoration: none;
+  }
+
+ul.breadcrumb li {
+    color: white;
+}
+  
+ul.breadcrumb li+li:before {
+    padding: 10px;
+    color: white;
+    content: "/\00a0";
+  }
+  
+ul.breadcrumb li a:hover {
+    font-weight: bold;
+    color: #96E6B3;
+    text-decoration: none;
+  }
+
+section.project3-header {
+    margin: auto;
+    width: auto;
+}
+
+#preprocessing-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    max-width: 80%;
+    padding: 10px 20px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #464e47, #568259);
+    color: white;
+    border-radius: 16px;
+    text-decoration: none;
+    box-shadow: 1px 3px 3px black;
+}
+
+/* SCROLL TO TOP BUTTON */
+#top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    text-align: center;
+    background-color: #464E47;
+    color: white;
+    border-radius: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    box-shadow: 1px 3px 3px black;
+    font-size: 18px;
+    font-family: Josefin Sans, Arial, sans-serif; 
+  }
+  
+  #top-button:hover {
+    background-color: white;
+    color: #464E47;
+    font-weight: bold;
+  }
+
+/* GRID LAYOUT */
+
+.project3-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 600px;
+}
+
+.question1 p, .question1 h4, .question2 p, .question2 h4 {
+    text-align: center;
+}
+
+.question1, .question2 {
+    width: 45%;
+    padding: 0px 40px;
+}
+
+/* MEDIA QUERY */
+/* Media Query for Mobile Viewport */
+@media screen and (max-width: 767px), print {
+nav.default {
+    display: none;
+}
+
+nav.burger {
+    display: block;
+    background-color: #464E47;
+    position: relative;
+}
+
+nav.burger ul {
+    display: none;
+    background-color:#464E47;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav.burger ul li {
+    text-align: center;
+}
+
+nav.burger #links {
+    display: none;
+    flex-direction: column;
+}
+
+nav.burger a {
+    color: #CCFCCB;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+nav.burger a:hover {
+    background-color: #568259;
+    color: white;
+}
+
+nav.burger .icon {
+    color: #464E47;
+    display: block;
+    font-size: 16px;
+    position: absolute;
+}
+
+nav.burger .icon:hover {
+    background-color: #568259;
+    color: white;
+}
+}
+
+/* Media Query for Tablet/Desktop Viewport */
+@media screen and (min-width: 768px), print {
+    
+}
