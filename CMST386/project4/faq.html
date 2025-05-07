@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nicey Treat Questions & Answers</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="description" content="Do you have any questions for Nicey Treat? Check out our list of Frequently Asked Questions.">
+        <meta name="keywords" content="FAQ, questions, answers, Nicey Treat">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+
+    <header>
+        <nav class="dropdown-nav">
+            <div class="navbar">
+                <div class="nav-left">
+                    <a href="home.html" class="nicey-logo-link">
+                        <img src="images/nicey-logo.png" alt="Image of white Nicey Treat logo" class="logo">
+                    </a>
+                </div>
+    
+                <div class="nav-right">
+                    <div class="dropdown">
+                    <button class="dropbtn">About
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                <div class="dropdown-content">
+                    <a href="about.html">Our Story</a>
+                    <a href="faq.html">Questions & Answers</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="coloring.html">Nicey Coloring Page</a>
+                </div>
+            </div>
+    
+                <div class="dropdown">       
+                    <button class="dropbtn">Shop
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="flavors.html">Staple Flavors</a>
+                        <a href="merch.html">Merchandise</a>
+                    </div>
+                </div>
+    
+                <a href="catering.html">Catering & Events</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <body>
+        <center><h1>Questions & Answers</h1></center>
+
+        <section class="faq-container">
+            <section class="faq-accordion-column">
+            <section class="accordion-item">
+                <button class="accordion-question">How long do the pops stay frozen in the freezer cart?</button>
+                <div class="accordion-answer">
+                    <p>On average our carts will stay frozen 5-6 hours WITHOUT power. A lot of factors play a part such as temperature, placement, etc.. We tell people to keep them plugged in until shortly before your event starts then you can move them where ever you desire and not worry about power.</p>
+                </div>
+            </section>
+            
+            <section class="accordion-item">
+                <button class="accordion-question">How many pops do the carts hold and are they heavy?</button>
+                <div class="accordion-answer">
+                    <p>Around 600 or so, depending on whether they are vegan or dairy. Don't over do it and offer a lot of flavor options, this tends to overwhelm your guests and it will make it difficult for you to access all the flavors within the cart. Six flavors is usually more than enough to make everybody happy.<br><br> The carts are very heavy, about 450lbs empty, thus they need to be trailered to you. However, they are on casters making them easy to manipulate and move around. They cannot go up stairs but they easily fit in almost all door jams and elevators. We rarely have a problem getting them to where the need to go.
+                    </p>
+                </div>
+            </section>
+
+            <section class="accordion-item">
+                <button class="accordion-question">I don't need a cart. What should I use?</button>
+                <div class="accordion-answer">
+                    <p>A normal hard cooler and dry ice works great. Wet ice will not work as it is not cold enough. Be sure to vent your coolers so that when the dry ice sublimates to a gas it can escape. Below are places for dry ice in the Indy area. We highly recommend Sutton Garten.</p>
+                </div>
+            </section>
+
+            <section class="accordion-item">
+                <button class="accordion-question">I have a trailer. Can I pick it up and deliver it myself?</button>
+                <div class="accordion-answer">
+                    <p>Sorry, no. No exceptions.</p>
+                </div>
+            </section>
+
+            <section class="accordion-item">
+                <button class="accordion-question">Will you come and be a vendor at our event?</button>
+                <div class="accordion-answer">
+                    <p>We love to get out and do events and we have a freezer cart that is simple to use. Our shortest event time frame is 3 hours and we have a have a $200hr minimum. For example, if you want us to vend at your event for 4 hours we need to gross $800, if we don't, you are obligated to make up the difference.<br><br> Here are some other questions we like answered, before we agree to hit the road and attend your event.</p>
+                    <ul>
+                        <li>How many people are expected to attend?</li>
+                        <li>Are there other dessert vendors?</li>
+                        <li>Will alcohol and/or food be served?</li>
+                        <li>What is the demographic makeup of attendees?</li>
+                        <li>What time of year is your event?</li>
+                        <li>How far away is your event?</li>
+                        <li>What fees are associated with your event?</li>
+                        <li>Do you require a percentage of sales to be paid or donated?</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="accordion-item">
+                <button class="accordion-question">Do you guys make charitable donations?</button>
+                <div class="accordion-answer">
+                    <p>All the time and we are happy to help out! Use the <a href="contact.html">Contact Us</a> page to reach us.</p>
+                </div>
+            </section>
+            </section>
+            
+            <section class="faq-text-column">
+                <h2>Do you have more questions?</h2>
+                <center><a href="contact.html" class="button">Contact Us!</a></center>
+            </section>
+        </section>    
+    <script>
+        const accordions = document.querySelectorAll('.accordion-question');
+    
+        accordions.forEach(button => {
+            button.addEventListener('click', function () {
+                this.classList.toggle('active');
+                const answer = this.nextElementSibling;
+    
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+    </script>
+    
+    </body>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">Our Story</a>
+            <a href="faq.html">Questions & Answers</a>
+            <a href="blog.html">Blog</a>
+            <a href="careers.html">Careers</a>
+            <a href="coloring.html">Coloring Page</a>
+            <a href="flavors.html">Staple Flavors</a>
+            <a href="merch.html">Merchandise</a>
+            <a href="catering.html">Catering & Events</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </footer>
+
+</html>

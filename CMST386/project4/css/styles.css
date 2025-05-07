@@ -1,0 +1,832 @@
+/*
+    Colors
+    blue: #268ad2
+    orange: #f9a02a
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h3, h4, section, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* BASIC STYLES */
+h1 {
+    font-family: Lily Script One;
+    color: #268ad2;
+    font-size: 90px;
+    font-weight: 400;
+    padding-left: 20px;
+    line-height: 1;
+    margin: 20px 0px 20px 0px;
+}
+
+h2 {
+    font-family: Lily Script One;
+    color: #268ad2;
+    font-size: 50px;
+    font-weight: 400;
+    padding-left: 20px;
+    margin: 20px 0px 20px 0px;
+}
+
+p {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+ul {
+    font-size: 20px;
+    color: black;
+    font-family: "Open Sans", Arial, sans-serif;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+.button {
+    font-family: "Open Sans", Arial, sans-serif;
+    padding: 15px 25px;
+    background-color: #f9a02a;
+    color: white;
+    border-radius: 16px;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #268ad2;
+    color: white;
+}
+
+a {
+    color: #268ad2;
+}
+
+a:hover {
+    color: #f9a02a;
+}
+
+/* NAVIGATION */
+.navbar {
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    background-color: #268ad2;
+    font-family: "Open Sans", Arial, sans-serif; 
+    display: flex;
+}
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Open Sans", Arial, sans-serif; 
+}
+
+.navbar a:hover {
+    background-color: #EA9729;
+}
+
+.nav-left {
+    flex: 1;
+}
+  
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    font-weight: bold;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9a02a;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nicey-logo-link {
+    margin-right: 40px;
+}
+  
+.logo {
+    height: 60px;
+    width: auto;
+    padding-left: 10px;
+}
+
+/* HOMEPAGE HERO SECTION */
+.home-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/pink-popsicles-hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-content h1 {
+    color: white;
+    text-align: center;
+}
+
+.hero-content p {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.num-one {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 50px 0;
+
+}
+
+.num-one h1 {
+    font-size: 200px; 
+    margin: 0;
+}
+
+.text-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.text-group h2 {
+    font-size: 90px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.num-one a {
+    font-size: 30px;
+    color: #f9a02a;
+    padding-left: 30px;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin-top: 10px;
+}
+
+.num-one a:hover {
+    color: #268ad2;
+}
+
+/* HAVE AN ICE DAY HOME */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #268ad2;
+}
+
+.img-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.img-column img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 16px;
+}
+
+.text-column {
+    flex: 1;
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+.text-column p {
+    color: white;
+    padding-top: 30px;
+}
+
+.text-column h3 {
+    font-family: Lily Script One;
+    color: white;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+/* NICEY COMMENTS */
+
+.nicey-comments {
+    background-color: white;
+}
+
+.nicey-comments h2 {
+    color: black;
+    padding-left: 90px;
+}
+
+.container-comments {
+    display: flex;
+	justify-content: space-between;
+	width: 90%;
+    margin: 5px auto;
+    flex-wrap: wrap;
+}
+
+.review {
+    width: 30%;
+    height: 200px;
+    margin: 0 10px;
+    border: 0.1px solid grey;
+    border-radius: 16px;
+}
+
+.review p {
+    font-size: 16px;
+    padding: 30px 10px 10px 10px;
+}
+
+.name {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* STAPLE FLAVORS */
+.flavor-header {
+    text-align: center;
+}
+
+.flavor-paragraph {
+    text-align: center;
+    margin: 0px 180px;
+}
+
+.staple-flavors {
+    display: flex;
+	justify-content: space-between;
+	width: 80%;
+    margin: 5px auto;
+    flex-wrap: wrap;
+}
+
+.staple-flavors h2 {
+    font-size: 60px;
+    margin: 0;
+    padding: 20px 0px 20px 10px;
+}
+
+#staple-flavors-img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 30px 0px 30px 0px;
+    border-radius: 16px;
+}
+
+.flavor {
+    width: 30%;
+    height: auto;
+    margin: 0 10px;
+}
+
+.flavor img {
+    border-radius: 16px;
+}
+
+.flavor h5 {
+    font-family: Lily Script One;
+    color: #268ad2;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.flavor p {
+    font-size: 16px;
+    padding: 5px 0px 20px 0px;
+}
+
+/* CAREERS */
+.careers-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 60px;
+    background-color: white;
+    box-sizing: border-box;
+    border-right: 30px solid #f9a02a;
+    border-left: 30px solid #f9a02a;
+}
+
+.careers-text-column {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px 40px;
+}
+
+.careers-text-column h1 {
+    margin-bottom: 20px;
+}
+
+.careers-text-column p {
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+.careers-text-column ul {
+    list-style: disc;
+    padding-left: 60px;
+}
+
+.career-text-column a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.careers-img-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.careers-img-column img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* QUESTIONS AND ANSWERS */
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+}
+
+.faq-accordion-column {
+    flex: 1;
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+.faq-text-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.faq-text-column h2 {
+    text-align: center;
+    font-size: 60px;
+    color:#f9a02a;
+    padding-right: 20px;
+}
+
+.accordion-item {
+    width: 100%;
+    max-width: 800px;
+    margin: 12px auto;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.accordion-question {
+    background-color: #268ad2;
+    color: white;
+    cursor: pointer;
+    padding: 18px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.accordion-question:hover, .accordion-question.active {
+    background-color: #f9a02a;
+}
+
+.accordion-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px 20px;
+    background-color: #F3F3F3;
+    transition: max-height 0.4s ease;
+}
+
+.accordion-answer p {
+    margin: 15px 0px;
+    color: black;
+}
+
+/* BLOG */
+.blog-hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/nicey-truck.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blog-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.blog-content h1 {
+    color: white;
+    text-align: center;
+}
+
+.blog {
+    display: flex;
+	justify-content: space-between;
+	width: 90%;
+    margin: 5px auto;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    background-color: #F3F3F3;
+    border-radius: 16px;
+}
+
+.blog-post h4 {
+    font-family: Lily Script One;
+    color: black;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.date {
+    font-size: 13px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.preview {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.blog-button {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #f9a02a;
+    padding: 10px 5px;
+    color: white;
+    border-radius: 16px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: 5px auto;
+    transition: background-color 0.2s ease;
+}
+
+.blog-button:hover {
+    background-color: #268ad2;
+    color: white;
+}
+
+.blog-post-photo {
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+/* MERCHANDISE */
+.merch-row {
+    display: flex;
+	justify-content: center;
+	width: 80%;
+    margin: 5px auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#merch-row-img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 30px 0px 30px 0px;
+    border-radius: 16px;
+}
+
+.merch {
+    width: 30%;
+    height: auto;
+    margin: 0 10px;
+}
+
+.merch img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover; 
+    aspect-ratio: 1 / 1;
+}
+
+.merch h5 {
+    font-family: Lily Script One;
+    color: #268ad2;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.merch p {
+    font-size: 16px;
+    padding: 5px 0px 20px 0px;
+}
+
+/* CATERING & EVENTS */
+.catering-img-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+.catering-img-row img {
+    width: calc(100% / 5);
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+    aspect-ratio: 1 / 1;
+}
+
+.catering-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #268ad2;
+    margin-top: 25px;
+}
+
+.catering-container p {
+    color: white;
+    padding-top: 20px;
+}
+
+.catering-container a {
+    color: #EA9729;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.catering-container a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.catering-container ul {
+    color: white;
+    margin-left: 20px;
+}
+
+.catering-container h3 {
+    font-family: Lily Script One;
+    color: white;
+    text-align: left;
+    font-size: 50px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+/* ABOUT US */
+.about-hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: url("../images/about-pic.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.about-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.about-hero-content h1 {
+    color: white;
+}
+
+.about-us {
+    background-color: #268ad2;
+}
+
+.about-us p {
+    color: white;
+    padding: 50px 100px;
+}
+
+/* CONTACT US */
+.contact-form-container {
+    background: #EA9729;
+    padding: 15px 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+  
+.contact-form-container h2 {
+    color: white;
+    text-align: left;
+}
+  
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+  
+#submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #268ad2;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+  
+#submit:hover {
+    background-color: white;
+    color: #268ad2;
+}
+  
+#formMessage {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.contact-img-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+.contact-img-row img {
+    width: calc(100% / 5);
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+    aspect-ratio: 1 / 1;
+}
+
+/* FOOTER */
+footer {
+    background-color: #EA9729;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    border-top: 1px solid white;
+}
+  
+.footer-links {
+    margin-bottom: 10px;
+}
+  
+.footer-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+  
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #268ad2;
+}
